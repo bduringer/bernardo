@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function onmouse(elemento){
+            elemento.style.backgroundColor = "red";
+        }
+        function outmouse(elemento){
+            elemento.style.backgroundColor = "greenyellow";
+        }
+    </script>
+    <style>
+        img{
+            width: 300px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        div{
+            padding: 10px;
+            display: inline-block;
+            background-color: greenyellow;
+            color: white;
+        }
+    </style>
+        
+    </style>
+</head>
+<body onload="console.log('Página completamente carregada')">
+    <img src="https://media.gazetadopovo.com.br/2020/07/07095247/cpia-de-chocolate-cuore-di-cacao-la_let1223-6dffad50-960x401.jpg"><br>
+    <div onmouseover="onmouse(this)" onmouseout="outmouse(this)">
+        "Click"
+        
+    </div>
+    
+    
+  
+</body>
+</html>

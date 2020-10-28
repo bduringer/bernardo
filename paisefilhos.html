@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        window.onload = function(){
+            let h1 = document.getElementsByTagName("h1");
+            for(let h of h1){
+                console.log(h);
+                h.addEventListener("click", qop);
+            }
+            function qop(e){
+                let t = e.target;
+                console.log(t.parentElement);
+
+            }
+        }
+     
+    </script>
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <div id="d1">
+        <h1>Titulo</h1>
+        <p>Paragrafo qualquer</p>
+    </div>
+    <div id="d2">
+        <h1>Titulo2</h1>
+        <p>Paragrafo qualquer2</p>
+    </div>
+   
+   
+</body>
+</html>
